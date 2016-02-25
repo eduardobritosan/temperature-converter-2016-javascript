@@ -1,6 +1,6 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 //const FAHARRAY = ["fa", "fah", "fahr", "fahre", "fahren", "fahrenh", "fahrenhe", "fahrenhei", "fahrenheit"];
-const CELARRAY = ["ce", "cel", "cels", "celsi", "celsiu", "celsius"];
+const CELARRAY = ["c","ce", "cel", "cels", "celsi", "celsiu", "celsius"];
 
 function calculate() {
   var result;
