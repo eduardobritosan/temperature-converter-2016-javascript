@@ -1,0 +1,74 @@
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+    font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+
+}
+
+
+body{
+  background-color: #FFF2BC;
+}
+
+.header{
+  background-color: #383636;
+  text-align: center;
+  color:  #FFF2BC;
+  height: 15%;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+h1{
+  background-color: #383636;
+  margin: 0px;
+}
+
+table {
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+th, td{
+  padding: 15px;
+  font-size:large;
+}
+
+thead
+{
+    height:20px;
+    width:100%;
+    margin-top:22px;
+    text-align:left;
+}
+
+tbody
+{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height:190px;
+  width:100%;
+  margin-top:22px;
+}
+th{
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.block {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.block:before {
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
