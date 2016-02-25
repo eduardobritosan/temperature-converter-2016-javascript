@@ -13,5 +13,5 @@
 
 ### Authors
 
-* Eduardo Brito Sánchez
+* [Eduardo Brito Sánchez](eduardobritosan.github.io) 
 * Javier Martín Hernández
