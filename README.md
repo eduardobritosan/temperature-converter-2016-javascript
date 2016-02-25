@@ -17,4 +17,4 @@
 * Javier Martín Hernández
 
 ### GitHub Page
-[Temperature Converter](eduardobritosan.github.io/temperature-converter-2016-javascript)
+[Temperature Converter](eduardobritosan.github.io/temperature-converter-2016-javascript/)
