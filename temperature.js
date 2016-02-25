@@ -5,7 +5,7 @@ const CELARRAY = ["ce", "cel", "cels", "celsi", "celsiu", "celsius"];
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /^\s*([-+]?\s*?\d+(?:\.\d*)?\s*(?:[Ee]\s*[+-]?\s*\d+)?)?\s*([fc]|fa|fah|fahr|fahre|fahren|fahrenh|fahrenhe|fahrenhei|fahrenheit|ce|cel|cels|celsi|celsiu|celsius)\s*$/i;
+  var regexp = /^\s*([-+]?\s*?\d+(?:\.\d*)?\s*(?:[Ee]\s*[+-]?\s*\d+)?)?\s*((c(e(l(c(i(u(s)?)?)?)?)?)?)|(f(a(h(r(e(n(h(e(i(t)?)?)?)?)?)?)?)?)?))\s*$/i;
   var m = temp.match(regexp);
   var cel_all_perms = [];
 
