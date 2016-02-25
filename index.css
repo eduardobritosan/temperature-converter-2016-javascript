@@ -8,21 +8,23 @@ html, body {
 
 .header{
   background-color: #607D8B;
-  text-align: center;
   color:  white;
-  height: 29%;
   width:100%;
   display:flex;
-  align-items: center;
-  justify-content: center;
+}
 
+h1 {
+  margin-left: 10px;
+}
+
+.links{
+  position:absolute;
+  right:0;
 }
 
 table {
     display: inline-block;
     vertical-align: middle;
-    /*position: absolute;
-    top: 50%;*/
 }
 
 th, td{
@@ -48,17 +50,19 @@ tbody
 	left:0;
   background-color: #607D8B;
   color:  white;
+  text-align: center;
 }
 
 .block {
   text-align: center;
   white-space: nowrap;
-  height: 100vh;
+  height: 70vh;
 }
-/*
-.block:before {
-  display: inline-block;
 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 70%;
   vertical-align: middle;
   margin-right: -0.25em;
-}*/
+}
