@@ -2,21 +2,35 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+  var regexp = /^([-+]?\s*?\d+(?:\.\d*)?(?:[Ee][+-]?\d+)?)?\s*([fFcC])$/;
+
   var m = temp.match(regexp);
-  
+
   if (m) {
-    var num = m[1];
+    var num = m[1].replace(/\s*/g, "");
     var type = m[2];
+    var exp = false;
+
+    if (num.match(/[Ee]/))
+      exp = true;
+
     num = parseFloat(num);
+
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
-      result = result.toFixed(1)+" Farenheit"
+      if(exp)
+         result = result.toExponential().replace(/\.(\d\d)(\d*)/, "\.$1");
+      else
+         result = result.toFixed(1);
+      result = result +" Farenheit"
     }
     else {
       result = (num - 32)*5/9;
-      result = result.toFixed(1)+" Celsius"
+      if(exp)
+         result = result.toExponential().replace(/\.(\d\d)(\d*)/, "\.$1");
+      else
+         result = result.toFixed(1);
+      result = result +" Celsius"
     }
     converted.innerHTML = result;
   }
