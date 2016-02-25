@@ -26,7 +26,11 @@
         <table>
           <tr>
             <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-            <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="100"></td>
+              <td>
+            <form onsubmit="calculate();return false;">
+              <input id="original" autofocus placeholder="32F" size="100"  pattern = "^\s*([-+]?\s*?\d+(?:\.\d*)?\s*(?:[Ee]\s*[+-]?\s*\d+)?)?\s*(([cC]([eE]([lL]([sS]([iI]([uU]([sS])?)?)?)?)?)?)|([fF]([aA]([hH]([rR]([eE]([nN]([hH]([eE]([iI]([tT])?)?)?)?)?)?)?)?)?))\s*$">
+            </form>
+            </td>
           </tr>
           <tr>
             <th>Converted Temperature:</th>
