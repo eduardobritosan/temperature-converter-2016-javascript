@@ -22,7 +22,7 @@ h1 {
   right:0;
 }
 
-table {
+table, img {
     display: inline-block;
     vertical-align: middle;
 }
@@ -30,6 +30,7 @@ table {
 th, td{
   padding: 15px;
   font-size:large;
+  text-align: left;
 }
 
 tbody
@@ -65,4 +66,17 @@ tbody
   height: 70%;
   vertical-align: middle;
   margin-right: -0.25em;
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: #607D8B;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #c4c8c9;
 }
