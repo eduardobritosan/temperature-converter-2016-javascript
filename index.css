@@ -2,18 +2,14 @@ html, body {
     min-height: 100% !important;
     height: 100%;
     font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+    background-color: #ECEFF1;
 
-}
-
-
-body{
-  background-color: #ECEFF1;
 }
 
 .header{
   background-color: #607D8B;
   text-align: center;
-  color:  #ECEFF1;
+  color:  white;
   height: 29%;
   width:100%;
   display:flex;
@@ -22,28 +18,16 @@ body{
 
 }
 
-h1{
-  /*background-color: #383636;*/
-  margin: 0px;
-}
-
 table {
-
     display: inline-block;
     vertical-align: middle;
+    /*position: absolute;
+    top: 50%;*/
 }
 
 th, td{
   padding: 15px;
   font-size:large;
-}
-
-thead
-{
-    height:20px;
-    width:100%;
-    margin-top:22px;
-    text-align:left;
 }
 
 tbody
@@ -54,12 +38,7 @@ tbody
   width:100%;
   margin-top:22px;
 }
-th{
-  height: 50px;
-  text-align: center;
-  vertical-align: middle;
 
-}
 
 .footer {
 	width:100%;
@@ -67,16 +46,19 @@ th{
 	position:absolute;
 	bottom:0;
 	left:0;
+  background-color: #607D8B;
+  color:  white;
 }
 
 .block {
   text-align: center;
   white-space: nowrap;
+  height: 100vh;
 }
-
+/*
 .block:before {
   display: inline-block;
-  height: 100vh;
+
   vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
+  margin-right: -0.25em;
+}*/
